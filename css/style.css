@@ -1,0 +1,118 @@
+/*Selectori Universal*/
+* {
+	font-family: 'Dosis', sans-serif;
+}
+
+/*Selector Etiquetas*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+	display: inline;
+	float: right;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	margin: 0 5px;
+}
+
+li a {
+  display: block;
+  padding: 5px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+li a:active {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*Selector id*/
+#body {
+	background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+	height: 40px;
+	width: 100%;
+	padding: 20px;
+}
+
+#header section {
+	display: flex;
+	float: right;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#header nav {
+	margin-right: 50px;
+}
+
+#gradient {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#content {
+	width: 920px;
+	margin: auto;
+	flex-wrap: wrap;
+	display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+	padding-top: 50px;
+}
+
+#iphone{
+	display: block;
+	width: 50%;
+	text-align: center;
+	-webkit-align-items: center; /* Safari 7.0+ */
+	align-items: center;
+}
+
+#info{
+	display: inline-block;
+	text-align: center;
+	width: 49%;
+}
+
+#info p{
+	color: #FFFFFF;
+	font-size: 36px;
+}
+
+@media all and (max-width: 1000px) {
+		    #content { width: 80%;}
+
+@media all and (max-width: 800px) {
+    #iphone { display:none; }
+
+@media all and (max-width: 800px) {
+		    #info { text-align: center; width: 100%; }
+
+#footer{
+	font-size: 14px;
+	color: #ffffff;
+	text-align: left;
+	margin-left: 40px;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
